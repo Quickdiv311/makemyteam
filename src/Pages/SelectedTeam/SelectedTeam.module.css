@@ -1,0 +1,26 @@
+.main
+{
+    text-align: center;
+}
+
+.selected
+{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 50px auto;
+}
+
+.selectedTeam
+{
+   display: flex;
+   margin: 20px auto;
+}
+
+.cap
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+}

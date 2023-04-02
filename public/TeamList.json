@@ -1,0 +1,134 @@
+[
+    {
+      "Name": "J Buttler",
+      "Team": 1,
+      "Credits": 10.5,
+      "Skill": "WK"
+    },
+    {
+      "Name": "S Samson",
+      "Team": 1,
+      "Credits": 9.0,
+      "Skill": "WK"
+    },
+    {
+      "Name": "D Padikkal",
+      "Team": 1,
+      "Credits": 8.5,
+      "Skill": "BAT"
+    },
+    {
+      "Name": "Y Jaiswal",
+      "Team": 1,
+      "Credits": 8.5,
+      "Skill": "BAT"
+    },
+    {
+      "Name": "R Ashwin",
+      "Team": 1,
+      "Credits": 9.0,
+      "Skill": "ALL"
+    },
+    {
+      "Name": "R Parag",
+      "Team": 1,
+      "Credits": 8.0,
+      "Skill": "ALL"
+    },
+    {
+      "Name": "S Hetmyer",
+      "Team": 1,
+      "Credits": 8.5,
+      "Skill": "BAT"
+    },
+    {
+      "Name": "Y Chahal",
+      "Team": 1,
+      "Credits": 9.5,
+      "Skill": "BOW"
+    },
+    {
+      "Name": "T Boult",
+      "Team": 1,
+      "Credits": 8.5,
+      "Skill": "BOW"
+    },
+    {
+      "Name": "P Krishna",
+      "Team": 1,
+      "Credits": 8.5,
+      "Skill": "BOW"
+    },
+    {
+      "Name": "O McCoy",
+      "Team": 1,
+      "Credits": 8.0,
+      "Skill": "BOW"
+    },
+    {
+      "Name": "W Saha",
+      "Team": 2,
+      "Credits": 9.0,
+      "Skill": "WK"
+    },
+    {
+      "Name": "M Wade",
+      "Team": 2,
+      "Credits": 8.0,
+      "Skill": "WK"
+    },
+    {
+      "Name": "D Miller",
+      "Team": 2,
+      "Credits": 9.0,
+      "Skill": "BAT"
+    },
+    {
+      "Name": "S Gill",
+      "Team": 2,
+      "Credits": 9.0,
+      "Skill": "BAT"
+    },
+    {
+      "Name": "H Pandya",
+      "Team": 2,
+      "Credits": 9.5,
+      "Skill": "ALL"
+    },
+    {
+      "Name": "R Tewatia",
+      "Team": 2,
+      "Credits": 8.0,
+      "Skill": "ALL"
+    },
+    {
+      "Name": "R Khan",
+      "Team": 2,
+      "Credits": 9.5,
+      "Skill": "BOW"
+    },
+    {
+      "Name": "M Shami",
+      "Team": 2,
+      "Credits": 8.5,
+      "Skill": "BOW"
+    },
+    {
+      "Name": "A Joseph",
+      "Team": 2,
+      "Credits": 8.0,
+      "Skill": "BOW"
+    },
+    {
+      "Name": "Y Dayal",
+      "Team": 2,
+      "Credits": 8.0,
+      "Skill": "BOW"
+    },
+    {
+      "Name": "R S Kishore",
+      "Team": 2,
+      "Credits": 8.0,
+      "Skill": "BOW"
+    }
+  ]
