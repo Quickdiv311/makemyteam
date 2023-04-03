@@ -3,6 +3,7 @@ import styles from './Subs.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import PlayerIcon from '../../PlayerIcon/PlayerIcon';
 import { initialize, teamSelector } from '../../../store/reducers/TeamReducer';
+import SubsIcon from '../../SubsIcon/SubsIcon';
 
 const Subs = () => {
 
@@ -37,14 +38,14 @@ const Subs = () => {
       <div className={styles.list1}>
            {
             teamA.map((player) => (
-              <PlayerIcon player={player}/>
+              <SubsIcon player={player}/>
             ))
            }
       </div>
       <div className={styles.list2}>
            {
             teamB.map((player) => (
-              <PlayerIcon player={player}/>
+              <SubsIcon player={player}/>
             ))
            }
       </div>

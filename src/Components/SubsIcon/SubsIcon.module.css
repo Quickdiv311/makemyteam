@@ -1,0 +1,81 @@
+
+.player
+{
+    margin: 15px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    width: 420px;
+    margin-bottom: 20px; 
+    cursor: pointer;
+}
+
+.pic
+{
+    display: flex;
+    padding: 0 15px;
+    border-right: 1px solid black;
+    background-color: rgb(141, 142, 145);
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+    align-items: center;
+}
+
+.picAdded
+{
+    display: flex;
+    padding: 0 15px;
+    border-right: 1px solid black;
+    background-color: lightblue;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+    align-items: center;
+}
+
+.picSelected
+{
+    display: flex;
+    padding: 0 15px;
+    border-right: 1px solid black;
+    background-color: rgb(95, 212, 95) ;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+    align-items: center;
+}
+
+.title1
+{
+   width: 75%;
+   text-align: center;
+   background-color: rgb(224, 106, 218);
+   height: 100%;
+   padding-top: 10px;
+   font-weight: bolder;
+}
+
+.title2
+{
+   width: 75%;
+   text-align: center;
+   background-color: rgb(78, 180, 206);
+   height: 100%;
+   padding-top: 10px;
+   font-weight: bolder;
+}
+
+.credits
+{
+    padding-left: 15px;
+    border-left: 1px solid black;
+    border-radius: 0px 10px 10px 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 60px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+}
