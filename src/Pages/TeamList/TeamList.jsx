@@ -1,17 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import styles from './TeamList.module.css';
-import PlayerIcon from '../../Components/PlayerIcon/PlayerIcon';
 import { useDispatch, useSelector } from 'react-redux';
 import { generate, initialize, teamSelector } from '../../store/reducers/TeamReducer';
 import { useNavigate } from 'react-router-dom';
+import Announced from '../../Components/List/Announced/Announced';
+import Subs from '../../Components/List/Subs/Subs';
+import {BsChevronDown} from 'react-icons/bs';
 
 const TeamList = () => {
 
-  const [teamA, setTeamA] = useState([]);
-  const [teamB, setTeamB] = useState([]);
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const selectedTeam = useSelector(teamSelector);
+  const [showOptions, setShowOptions] = useState(false);
+  const [showTeam, setShowTeam] = useState(false);
+  const [showSubs, setShowSubs] = useState(false);
 
   function generateTeam()
   {
@@ -32,41 +36,40 @@ const TeamList = () => {
           i.id = ind;
           ind++;
         });
-
-        dispatch(initialize(res));
-        let res1 = res.filter(i => i.Team === 1);
-        let res2 = res.filter(i => i.Team === 2);
-
-        setTeamA(res1);
-        setTeamB(res2);
+        
+        let r = res.filter(i => i.Team === 1 || i.Team == 2);
+        dispatch(initialize(r));
       }
     )
   },[]);
 
   return (
-    <div className={styles.teamList}>
-      <h1>Here is playing 11 of both teams</h1>
-      <h3>Click on the players to pre Select team in you team</h3>
-    <div className={styles.list}>
-      <div className={styles.list1}>
-           {
-            teamA.map((player) => (
-              <PlayerIcon player={player}/>
-            ))
-           }
+    <div className={styles.teams}>
+      <div className={styles.portal}>
+        <h3>RR</h3>
+        <h3>SRH</h3>
+        <button className="btn btn-success" onClick={() => generateTeam()}>Make My Team</button>
+        <button className="btn btn-primary" onClick={() => setTimeout(setShowOptions(true),2000)}>Select or Reject Player</button>
       </div>
-      <div className={styles.list2}>
-           {
-            teamB.map((player) => (
-              <PlayerIcon player={player}/>
-            ))
-           }
-      </div>
+      {
+        showOptions &&
+        <div>
+    <div className={styles.titles}>
+    <h2 className={styles.title}>Announced</h2>
+      <BsChevronDown size={20} className={styles.arrow} onClick={() => {setShowTeam(!showTeam)}}/>
     </div>
-     <div className={styles.generate}>
-      <button className="btn btn-success" onClick={() => {generateTeam()}}>Create my Team</button>
+      <hr />
+      {showTeam && <Announced/>}
+      <div className={styles.titles}>
+      <h2 className={styles.title}>Subtitutes</h2>
+      <BsChevronDown size={20} className={styles.arrow} onClick={() => {setShowSubs(!showSubs)}}/>
       </div>
-    </div>
+      <hr />
+      {showSubs && <Subs/>}
+        </div>
+      }
+
+      </div>
   );
 }
 

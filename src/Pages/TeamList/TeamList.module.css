@@ -1,25 +1,40 @@
-.teamList
+.teams
 {
-    text-align: center;
-    margin: 40px 0;
+   margin: 2% 15%; 
 }
 
-.list
+.title
 {
-    margin: 3% 20% ;
+    margin-bottom: 0;
+}
+
+.portal
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid gray;
+    height: 90px;
+    border-radius: 15px;
+}
+
+.portal button
+{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.titles
+{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    margin-top: 50px;
 }
 
-.list1, .list2
+.arrow
 {
-    width: 35%;
-
+    margin-right: 20px;
 }
-
-.generate{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-

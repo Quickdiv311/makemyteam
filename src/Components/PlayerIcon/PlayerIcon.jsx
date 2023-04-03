@@ -11,7 +11,7 @@ const PlayerIcon = (props) => {
   const dispatch = useDispatch();
   function team(input)
   {
-    if(input == 1)
+    if(input == 1 || input==11)
     {
       return styles.title1;
     }
@@ -23,13 +23,15 @@ const PlayerIcon = (props) => {
 
   function preSelect(input)
   {
-    if(selectedTeam.includes(input) && selectedTeam.length<11)
+    if(input.Team==1 || input.Team==2)
+    {if(selectedTeam.includes(input) && selectedTeam.length<11)
     {
     dispatch(cancel(input));
     }
     else
     {
     dispatch(select(input));
+    }
     }
   }
 
@@ -42,7 +44,6 @@ const PlayerIcon = (props) => {
    else
    {
     return styles.pic;
-
    }
   }
 

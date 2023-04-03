@@ -1,134 +1,194 @@
 [
-    {
-      "Name": "J Buttler",
-      "Team": 1,
-      "Credits": 10.5,
-      "Skill": "WK"
-    },
-    {
-      "Name": "S Samson",
-      "Team": 1,
-      "Credits": 9.0,
-      "Skill": "WK"
-    },
-    {
-      "Name": "D Padikkal",
-      "Team": 1,
-      "Credits": 8.5,
-      "Skill": "BAT"
-    },
-    {
-      "Name": "Y Jaiswal",
-      "Team": 1,
-      "Credits": 8.5,
-      "Skill": "BAT"
-    },
-    {
-      "Name": "R Ashwin",
-      "Team": 1,
-      "Credits": 9.0,
-      "Skill": "ALL"
-    },
-    {
-      "Name": "R Parag",
-      "Team": 1,
-      "Credits": 8.0,
-      "Skill": "ALL"
-    },
-    {
-      "Name": "S Hetmyer",
-      "Team": 1,
-      "Credits": 8.5,
-      "Skill": "BAT"
-    },
-    {
-      "Name": "Y Chahal",
-      "Team": 1,
-      "Credits": 9.5,
-      "Skill": "BOW"
-    },
-    {
-      "Name": "T Boult",
-      "Team": 1,
-      "Credits": 8.5,
-      "Skill": "BOW"
-    },
-    {
-      "Name": "P Krishna",
-      "Team": 1,
-      "Credits": 8.5,
-      "Skill": "BOW"
-    },
-    {
-      "Name": "O McCoy",
-      "Team": 1,
-      "Credits": 8.0,
-      "Skill": "BOW"
-    },
-    {
-      "Name": "W Saha",
-      "Team": 2,
-      "Credits": 9.0,
-      "Skill": "WK"
-    },
-    {
-      "Name": "M Wade",
-      "Team": 2,
-      "Credits": 8.0,
-      "Skill": "WK"
-    },
-    {
-      "Name": "D Miller",
-      "Team": 2,
-      "Credits": 9.0,
-      "Skill": "BAT"
-    },
-    {
-      "Name": "S Gill",
-      "Team": 2,
-      "Credits": 9.0,
-      "Skill": "BAT"
-    },
-    {
-      "Name": "H Pandya",
-      "Team": 2,
-      "Credits": 9.5,
-      "Skill": "ALL"
-    },
-    {
-      "Name": "R Tewatia",
-      "Team": 2,
-      "Credits": 8.0,
-      "Skill": "ALL"
-    },
-    {
-      "Name": "R Khan",
-      "Team": 2,
-      "Credits": 9.5,
-      "Skill": "BOW"
-    },
-    {
-      "Name": "M Shami",
-      "Team": 2,
-      "Credits": 8.5,
-      "Skill": "BOW"
-    },
-    {
-      "Name": "A Joseph",
-      "Team": 2,
-      "Credits": 8.0,
-      "Skill": "BOW"
-    },
-    {
-      "Name": "Y Dayal",
-      "Team": 2,
-      "Credits": 8.0,
-      "Skill": "BOW"
-    },
-    {
-      "Name": "R S Kishore",
-      "Team": 2,
-      "Credits": 8.0,
-      "Skill": "BOW"
-    }
-  ]
+  {
+   "Name": "J Buttler",
+   "Team": 1,
+   "Credits": 9,
+   "Skill": "WK"
+  },
+  {
+   "Name": "S samson",
+   "Team": 1,
+   "Credits": 8.5,
+   "Skill": "WK"
+  },
+  {
+   "Name": "S Hetmyer",
+   "Team": 1,
+   "Credits": 8,
+   "Skill": "BAT"
+  },
+  {
+   "Name": "D Paddikal",
+   "Team": 1,
+   "Credits": 8,
+   "Skill": "BAT"
+  },
+  {
+   "Name": "Y Jaiswal",
+   "Team": 1,
+   "Credits": 7.5,
+   "Skill": "BAT"
+  },
+  {
+   "Name": "J Holder",
+   "Team": 1,
+   "Credits": 8.5,
+   "Skill": "ALL"
+  },
+  {
+   "Name": "R Ashwin",
+   "Team": 1,
+   "Credits": 8,
+   "Skill": "ALL"
+  },
+  {
+   "Name": "R Parag",
+   "Team": 1,
+   "Credits": 7.5,
+   "Skill": "ALL"
+  },
+  {
+   "Name": "K Asif",
+   "Team": 1,
+   "Credits": 6,
+   "Skill": "BOW"
+  },
+  {
+   "Name": "Y Chahal",
+   "Team": 1,
+   "Credits": 8.5,
+   "Skill": "BOW"
+  },
+  {
+   "Name": "T Boult",
+   "Team": 1,
+   "Credits": 9,
+   "Skill": "BOW"
+  },
+  {
+   "Name": "D Jurel",
+   "Team": 11,
+   "Credits": 6,
+   "Skill": "BAT"
+  },
+  {
+   "Name": "D Ferreira",
+   "Team": 11,
+   "Credits": 6.5,
+   "Skill": "ALL"
+  },
+  {
+   "Name": "S Sharma",
+   "Team": 11,
+   "Credits": 6,
+   "Skill": "BOW"
+  },
+  {
+   "Name": "M Ashwin",
+   "Team": 11,
+   "Credits": 6.5,
+   "Skill": "BOW"
+  },
+  {
+   "Name": "N Saini",
+   "Team": 11,
+   "Credits": 7,
+   "Skill": "BOW"
+  },
+  {
+   "Name": "G Phillips",
+   "Team": 2,
+   "Credits": 7.5,
+   "Skill": "WK"
+  },
+  {
+   "Name": "M Agarwal",
+   "Team": 2,
+   "Credits": 8.5,
+   "Skill": "BAT"
+  },
+  {
+   "Name": "R Tripathi",
+   "Team": 2,
+   "Credits": 8.5,
+   "Skill": "BAT"
+  },
+  {
+   "Name": "A Sharma",
+   "Team": 2,
+   "Credits": 8,
+   "Skill": "BAT"
+  },
+  {
+   "Name": "H Brook",
+   "Team": 2,
+   "Credits": 8,
+   "Skill": "BAT"
+  },
+  {
+   "Name": "W Sundar",
+   "Team": 2,
+   "Credits": 7.5,
+   "Skill": "ALL"
+  },
+  {
+   "Name": "F Farooqi",
+   "Team": 2,
+   "Credits": 7,
+   "Skill": "BOW"
+  },
+  {
+   "Name": "A Rashid",
+   "Team": 2,
+   "Credits": 7.5,
+   "Skill": "BOW"
+  },
+  {
+   "Name": "T Natrajan",
+   "Team": 2,
+   "Credits": 8,
+   "Skill": "BOW"
+  },
+  {
+   "Name": "B Kumar",
+   "Team": 2,
+   "Credits": 8.5,
+   "Skill": "BOW"
+  },
+  {
+   "Name": "U Malik",
+   "Team": 2,
+   "Credits": 8.5,
+   "Skill": "BOW"
+  },
+  {
+   "Name": "U Yadav",
+   "Team": 22,
+   "Credits": 5.5,
+   "Skill": "WK"
+  },
+  {
+   "Name": "A Samad",
+   "Team": 22,
+   "Credits": 6.5,
+   "Skill": "BAT"
+  },
+  {
+   "Name": "V Sharma",
+   "Team": 22,
+   "Credits": 5.5,
+   "Skill": "ALL"
+  },
+  {
+   "Name": "M Dagar",
+   "Team": 22,
+   "Credits": 6,
+   "Skill": "BOW"
+  },
+  {
+   "Name": "M Markande",
+   "Team": 22,
+   "Credits": 6,
+   "Skill": "BOW"
+  }
+ ]

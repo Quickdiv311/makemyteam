@@ -1,0 +1,28 @@
+.teamList
+{
+    text-align: center;
+}
+
+.list
+{
+    margin: 0% 10% ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list1, .list2
+{
+    width: 35%;
+
+}
+
+.generate{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.generate button
+{
+    margin: 20px;
+}
