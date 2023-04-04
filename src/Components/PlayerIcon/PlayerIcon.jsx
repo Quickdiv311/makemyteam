@@ -27,7 +27,7 @@ const PlayerIcon = (props) => {
 
   function isSelected(input)
   {
-    if(input.Status == "SelectedAnnounced")
+    if(input.Status.includes("SelectedAnnounced"))
     {
       return styles.picSelected;
     }

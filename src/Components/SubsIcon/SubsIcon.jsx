@@ -22,25 +22,26 @@ const SubsIcon = (props) => {
 
   function preSelect(input)
   {
-    if(input.Status == "AnnounceSub")
-    {
-    dispatch(select(input));
-    }
+    // if(input.Status == "AnnounceSub")
+    // {
+    // dispatch(select(input));
+    // }
 
-    if(input.Status == "Sub")
-    {
-    dispatch(add(input));
-    }
+    // if(input.Status == "Sub")
+    // {
+    // dispatch(add(input));
+    // }
+    dispatch(select(input));
   }
 
   function isSelected(input)
   {
-    if(input.Status == "Selected")
+    if(input.Status == "PreSelectedSub")
     {
       return styles.picSelected;
     }
 
-    if(input.Status == "Announced") 
+    if(input.Status == "AnnounceSub") 
     {
       return styles.picAnnounced;
     }

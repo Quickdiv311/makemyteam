@@ -240,11 +240,11 @@ const teamSlice = createSlice({
         let index = state.teams.findIndex(i => i.Name === action.payload.Name);
         if(state.teams[index].Status.includes("Announced"))
         {
-            state.teams[index].Status = "SelectedAnnounced";
+            state.teams[index].Status = "PreSelectedAnnounced";
         }
         if(state.teams[index].Status.includes("Sub"))
         {
-            state.teams[index].Status = "SelectedSub";
+            state.teams[index].Status = "PreSelectedSub";
         }
         state.total += state.teams[index].Credits;
         state.count[state.teams[index].Skill] += 1; 
@@ -261,6 +261,8 @@ const teamSlice = createSlice({
        },
 
         generate: (state,action) =>  {
+
+          state.teams.filter(i => i.Status.includes("Selected") && !i.Status.includes("Pre")).forEach(i => i.Status.replace("Selected",""));
 
          while(state.count.WK<2 || state.count.BAT<2 || state.count.ALL<2 || state.count.BOW<2)
          {
@@ -303,9 +305,12 @@ const teamSlice = createSlice({
           let selected = state.teams.filter(i => i.Status.includes("Selected"));
           
           let ind1 = Math.floor(Math.random() * selected.length);
-          state.cap.captain = selected[ind1].Name;
+          state.cap.captain = selected[ind1].Name;    
           let ind2 = Math.floor(Math.random() * selected.length);
-          state.cap.vice = selected[ind2].Name;
+          if(ind2 != ind1)
+          {
+            state.cap.vice = selected[ind2].Name;
+          }
         }
     } 
 })
