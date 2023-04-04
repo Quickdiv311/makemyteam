@@ -1,194 +1,226 @@
 [
   {
-   "Name": "J Buttler",
+   "Name": "D Conway",
+   "Team": 1,
+   "Credits": 8.5,
+   "Skill": "WK",
+   "Status": "Announced"
+  },
+  {
+   "Name": "Ms Dhoni",
+   "Team": 1,
+   "Credits": 7.5,
+   "Skill": "WK",
+   "Status": "Announced"
+  },
+  {
+   "Name": "R Gaikwad",
+   "Team": 1,
+   "Credits": 8.5,
+   "Skill": "BAT",
+   "Status": "Announced"
+  },
+  {
+   "Name": "A Rayudu",
+   "Team": 1,
+   "Credits": 7.5,
+   "Skill": "BAT",
+   "Status": "Announced"
+  },
+  {
+   "Name": "S Dube",
+   "Team": 1,
+   "Credits": 7,
+   "Skill": "BAT",
+   "Status": "Announced"
+  },
+  {
+   "Name": "R Jadeja",
    "Team": 1,
    "Credits": 9,
-   "Skill": "WK"
+   "Skill": "ALL",
+   "Status": "Announced"
   },
   {
-   "Name": "S samson",
-   "Team": 1,
-   "Credits": 8.5,
-   "Skill": "WK"
-  },
-  {
-   "Name": "S Hetmyer",
-   "Team": 1,
-   "Credits": 8,
-   "Skill": "BAT"
-  },
-  {
-   "Name": "D Paddikal",
-   "Team": 1,
-   "Credits": 8,
-   "Skill": "BAT"
-  },
-  {
-   "Name": "Y Jaiswal",
-   "Team": 1,
-   "Credits": 7.5,
-   "Skill": "BAT"
-  },
-  {
-   "Name": "J Holder",
-   "Team": 1,
-   "Credits": 8.5,
-   "Skill": "ALL"
-  },
-  {
-   "Name": "R Ashwin",
-   "Team": 1,
-   "Credits": 8,
-   "Skill": "ALL"
-  },
-  {
-   "Name": "R Parag",
-   "Team": 1,
-   "Credits": 7.5,
-   "Skill": "ALL"
-  },
-  {
-   "Name": "K Asif",
-   "Team": 1,
-   "Credits": 6,
-   "Skill": "BOW"
-  },
-  {
-   "Name": "Y Chahal",
-   "Team": 1,
-   "Credits": 8.5,
-   "Skill": "BOW"
-  },
-  {
-   "Name": "T Boult",
+   "Name": "B Stokes",
    "Team": 1,
    "Credits": 9,
-   "Skill": "BOW"
+   "Skill": "ALL",
+   "Status": "Announced"
   },
   {
-   "Name": "D Jurel",
-   "Team": 11,
-   "Credits": 6,
-   "Skill": "BAT"
+   "Name": "M Ali",
+   "Team": 1,
+   "Credits": 8.5,
+   "Skill": "ALL",
+   "Status": "Announced"
   },
   {
-   "Name": "D Ferreira",
-   "Team": 11,
+   "Name": "M Santner",
+   "Team": 1,
    "Credits": 6.5,
-   "Skill": "ALL"
+   "Skill": "ALL",
+   "Status": "Announced"
   },
   {
-   "Name": "S Sharma",
-   "Team": 11,
-   "Credits": 6,
-   "Skill": "BOW"
-  },
-  {
-   "Name": "M Ashwin",
-   "Team": 11,
-   "Credits": 6.5,
-   "Skill": "BOW"
-  },
-  {
-   "Name": "N Saini",
-   "Team": 11,
-   "Credits": 7,
-   "Skill": "BOW"
-  },
-  {
-   "Name": "G Phillips",
-   "Team": 2,
-   "Credits": 7.5,
-   "Skill": "WK"
-  },
-  {
-   "Name": "M Agarwal",
-   "Team": 2,
+   "Name": "D Chahar",
+   "Team": 1,
    "Credits": 8.5,
-   "Skill": "BAT"
+   "Skill": "BOW",
+   "Status": "Announced"
   },
   {
-   "Name": "R Tripathi",
-   "Team": 2,
-   "Credits": 8.5,
-   "Skill": "BAT"
-  },
-  {
-   "Name": "A Sharma",
-   "Team": 2,
-   "Credits": 8,
-   "Skill": "BAT"
-  },
-  {
-   "Name": "H Brook",
-   "Team": 2,
-   "Credits": 8,
-   "Skill": "BAT"
-  },
-  {
-   "Name": "W Sundar",
-   "Team": 2,
-   "Credits": 7.5,
-   "Skill": "ALL"
-  },
-  {
-   "Name": "F Farooqi",
-   "Team": 2,
-   "Credits": 7,
-   "Skill": "BOW"
-  },
-  {
-   "Name": "A Rashid",
-   "Team": 2,
-   "Credits": 7.5,
-   "Skill": "BOW"
-  },
-  {
-   "Name": "T Natrajan",
-   "Team": 2,
-   "Credits": 8,
-   "Skill": "BOW"
-  },
-  {
-   "Name": "B Kumar",
-   "Team": 2,
-   "Credits": 8.5,
-   "Skill": "BOW"
-  },
-  {
-   "Name": "U Malik",
-   "Team": 2,
-   "Credits": 8.5,
-   "Skill": "BOW"
-  },
-  {
-   "Name": "U Yadav",
-   "Team": 22,
+   "Name": "R Hangregekar",
+   "Team": 1,
    "Credits": 5.5,
-   "Skill": "WK"
+   "Skill": "BOW",
+   "Status": "Announced"
   },
   {
-   "Name": "A Samad",
-   "Team": 22,
-   "Credits": 6.5,
-   "Skill": "BAT"
+   "Name": "T Deshpande",
+   "Team": 1,
+   "Credits": 6,
+   "Skill": "BOW",
+   "Status": "Sub"
   },
   {
-   "Name": "V Sharma",
-   "Team": 22,
+   "Name": "S Senapati",
+   "Team": 1,
    "Credits": 5.5,
-   "Skill": "ALL"
+   "Skill": "BAT",
+   "Status": "Sub"
   },
   {
-   "Name": "M Dagar",
-   "Team": 22,
-   "Credits": 6,
-   "Skill": "BOW"
+   "Name": "S Rasheed",
+   "Team": 1,
+   "Credits": 5,
+   "Skill": "BAT",
+   "Status": "Sub"
   },
   {
-   "Name": "M Markande",
-   "Team": 22,
+   "Name": "A Rahane",
+   "Team": 1,
+   "Credits": 7,
+   "Skill": "BAT",
+   "Status": "Sub"
+  },
+  {
+   "Name": "Nishant sindhu",
+   "Team": 1,
+   "Credits": 5.5,
+   "Skill": "BOW",
+   "Status": "Sub"
+  },
+  {
+   "Name": "N Pooran",
+   "Team": 2,
+   "Credits": 8.5,
+   "Skill": "WK",
+   "Status": "Announced"
+  },
+  {
+   "Name": "KL Rahul",
+   "Team": 2,
+   "Credits": 9,
+   "Skill": "WK",
+   "Status": "Announced"
+  },
+  {
+   "Name": "D Hooda",
+   "Team": 2,
+   "Credits": 8,
+   "Skill": "BAT",
+   "Status": "Announced"
+  },
+  {
+   "Name": "A Badoni",
+   "Team": 2,
+   "Credits": 7,
+   "Skill": "BAT",
+   "Status": "Announced"
+  },
+  {
+   "Name": "M Stoinis",
+   "Team": 2,
+   "Credits": 8.5,
+   "Skill": "ALL",
+   "Status": "Announced"
+  },
+  {
+   "Name": "K Pandya",
+   "Team": 2,
+   "Credits": 8,
+   "Skill": "ALL",
+   "Status": "Announced"
+  },
+  {
+   "Name": "K Mayers",
+   "Team": 2,
+   "Credits": 7,
+   "Skill": "ALL",
+   "Status": "Announced"
+  },
+  {
+   "Name": "M Wood",
+   "Team": 2,
+   "Credits": 8,
+   "Skill": "BOWL",
+   "Status": "Announced"
+  },
+  {
+   "Name": "R Bishnoi",
+   "Team": 2,
+   "Credits": 8,
+   "Skill": "BOWL",
+   "Status": "Announced"
+  },
+  {
+   "Name": "J Unadkat",
+   "Team": 2,
+   "Credits": 7.5,
+   "Skill": "BOWL",
+   "Status": "Announced"
+  },
+  {
+   "Name": "A Khan",
+   "Team": 2,
+   "Credits": 8.5,
+   "Skill": "BOWL",
+   "Status": "Announced"
+  },
+  {
+   "Name": "K Gowtham",
+   "Team": 2,
+   "Credits": 6.5,
+   "Skill": "ALL",
+   "Status": "Sub"
+  },
+  {
+   "Name": "Yash Thakur",
+   "Team": 2,
    "Credits": 6,
-   "Skill": "BOW"
+   "Skill": "BOW",
+   "Status": "Sub"
+  },
+  {
+   "Name": "Prenak Mankad",
+   "Team": 2,
+   "Credits": 6,
+   "Skill": "ALL",
+   "Status": "Sub"
+  },
+  {
+   "Name": "Amit Mishra",
+   "Team": 2,
+   "Credits": 7,
+   "Skill": "BOW",
+   "Status": "Sub"
+  },
+  {
+   "Name": "D Sams",
+   "Team": 2,
+   "Credits": 7,
+   "Skill": "ALL",
+   "Status": "Sub"
   }
  ]

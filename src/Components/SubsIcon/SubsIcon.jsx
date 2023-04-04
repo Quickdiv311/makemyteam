@@ -2,17 +2,15 @@ import React from 'react';
 import styles from './SubsIcon.module.css';
 import {FaUserAlt} from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
-import { cancel, select, teamSelector, teams } from '../../store/reducers/TeamReducer';
+import { add, cancel, select, teamSelector, teams } from '../../store/reducers/TeamReducer';
 
 
 const SubsIcon = (props) => {
 
-  const selectedTeam = useSelector(teamSelector);
-  const teamsO = useSelector(teams);
   const dispatch = useDispatch();
   function subNames(input)
   {
-    if(input == 1 || input==11)
+    if(input == 1)
     {
       return styles.title1;
     }
@@ -24,28 +22,30 @@ const SubsIcon = (props) => {
 
   function preSelect(input)
   {
-if(selectedTeam.includes(input) && selectedTeam.length<11)
-    {
-    dispatch(cancel(input));
-    }
-    else
+    if(input.Status == "AnnounceSub")
     {
     dispatch(select(input));
+    }
+
+    if(input.Status == "Sub")
+    {
+    dispatch(add(input));
     }
   }
 
   function isSelected(input)
   {
-    if(teamsO.includes(input))
-    {
-        return styles.picAdded;
-    }
-
-    if(selectedTeam.includes(input) && selectedTeam.length<11)
+    if(input.Status == "Selected")
     {
       return styles.picSelected;
     }
-   else
+
+    if(input.Status == "Announced") 
+    {
+      return styles.picAnnounced;
+    }
+
+    if(input.Status == "Sub")
    {
     return styles.pic;
    }

@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import styles from './TeamList.module.css';
-import { useDispatch, useSelector } from 'react-redux';
-import { generate, initialize, teamSelector } from '../../store/reducers/TeamReducer';
+import { useDispatch, useSelector} from 'react-redux';
+import { generate, teamSelector } from '../../store/reducers/TeamReducer';
 import { useNavigate } from 'react-router-dom';
 import Announced from '../../Components/List/Announced/Announced';
 import Subs from '../../Components/List/Subs/Subs';
@@ -12,36 +12,20 @@ const TeamList = () => {
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const selectedTeam = useSelector(teamSelector);
   const [showOptions, setShowOptions] = useState(false);
   const [showTeam, setShowTeam] = useState(false);
   const [showSubs, setShowSubs] = useState(false);
+  const teams = useSelector(teamSelector);
 
   function generateTeam()
   {
-    if(selectedTeam.length < 11)
-    {
-      dispatch(generate());
-    }
+  const selected = teams.filter(i => i.Status.includes("Selected"));
+      if(selected.length < 11)
+      {
+        dispatch(generate());
+      }
     navigate('/select');
   }
-
-  useEffect(() => {
-    fetch("TeamList.json")
-    .then((res) => res.json())
-    .then((res) => 
-       {
-        let ind = 1;
-        res.forEach(i => {
-          i.id = ind;
-          ind++;
-        });
-        
-        let r = res.filter(i => i.Team === 1 || i.Team == 2);
-        dispatch(initialize(r));
-      }
-    )
-  },[]);
 
   return (
     <div className={styles.teams}>

@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './SelectedTeam.module.css';
 import { useSelector } from 'react-redux';
-import { capSelector, teamSelector, totalSelector } from '../../store/reducers/TeamReducer';
+import { capSelector, teamSelector} from '../../store/reducers/TeamReducer';
 import PlayerIcon from '../../Components/PlayerIcon/PlayerIcon';
 
 const SelectedTeam = () => {
 
-  const myTeam = useSelector(teamSelector);
-  const total = useSelector(totalSelector);
+  const teams = useSelector(teamSelector);
+  let myTeam = teams.filter(i => i.Status.includes("Selected"));
   const cap = useSelector(capSelector);
 
   return (
@@ -17,7 +17,7 @@ const SelectedTeam = () => {
         <div className={styles.selected}>
             <h4>Keepers</h4>
       {
-        myTeam.filter(i => i.Skill == 'WK').map((player) => (
+        myTeam.filter(i => i.Skill === 'WK').map((player) => (
             <PlayerIcon player={player}/>
         ))
       }
@@ -26,7 +26,7 @@ const SelectedTeam = () => {
       <div className={styles.selected}>
         <h4>Batsmen</h4>
       {
-        myTeam.filter(i => i.Skill == 'BAT').map((player) => (
+        myTeam.filter(i => i.Skill === 'BAT').map((player) => (
             <PlayerIcon player={player}/>
         ))
       }
@@ -35,7 +35,7 @@ const SelectedTeam = () => {
       <div className={styles.selected}>
         <h4>All Rounders</h4>
       {
-        myTeam.filter(i => i.Skill == 'ALL').map((player) => (
+        myTeam.filter(i => i.Skill === 'ALL').map((player) => (
             <PlayerIcon player={player}/>
         ))
       }
@@ -44,7 +44,7 @@ const SelectedTeam = () => {
       <div className={styles.selected}>
         <h4>Bowlers</h4>
       {
-        myTeam.filter(i => i.Skill == 'BOW').map((player) => (
+        myTeam.filter(i => i.Skill === 'BOW').map((player) => (
             <PlayerIcon player={player}/>
         ))
       }

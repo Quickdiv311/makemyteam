@@ -1,31 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Subs.module.css';
-import { useDispatch, useSelector } from 'react-redux';
-import PlayerIcon from '../../PlayerIcon/PlayerIcon';
-import { initialize, teamSelector } from '../../../store/reducers/TeamReducer';
 import SubsIcon from '../../SubsIcon/SubsIcon';
+import { useSelector } from 'react-redux';
+import { teamSelector } from '../../../store/reducers/TeamReducer';
 
 const Subs = () => {
 
     const [teamA, setTeamA] = useState([]);
     const [teamB, setTeamB] = useState([]);
-    const dispatch = useDispatch();
-    const selectedTeam = useSelector(teamSelector);
+  const teams = useSelector(teamSelector);
 
     useEffect(() => {
-        fetch("TeamList.json")
-        .then((res) => res.json())
-        .then((res) => 
-           {
-
-            let res1 = res.filter(i => i.Team === 11);
-            let res2 = res.filter(i => i.Team === 22);
+            let res1 = teams.filter(i => i.Team === 1 && (i.Status.includes("Sub")));
+            let res2 = teams.filter(i => i.Team === 2 && (i.Status.includes("Sub")));
     
             setTeamA(res1);
             setTeamB(res2);
-          }
-        )
-      },[]);
+      },[teams]);
 
   return (
     <div className={styles.teamList}>
