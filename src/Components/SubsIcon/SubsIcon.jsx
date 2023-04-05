@@ -35,7 +35,7 @@ const SubsIcon = (props) => {
       dispatch(add(input));
     }
 
-    if(input.Status == "PreSelectedSub" || input.Status == "AnnounceSub")
+    if((input.Status == "PreSelectedSub" && canSelect) || (input.Status == "AnnounceSub" && canAnnounce))
     {
       dispatch(cancel(input));
     }

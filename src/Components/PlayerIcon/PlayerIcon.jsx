@@ -36,7 +36,7 @@ const PlayerIcon = (props) => {
       dispatch(reject(input));
     }
 
-    if(input.Status == "PreSelectedAnnounced" || input.Status == "RejectedAnnounced")
+    if((input.Status == "PreSelectedAnnounced" && canSelect) || (input.Status == "RejectedAnnounced" && canReject))
     {
       dispatch(cancel(input));
     }
