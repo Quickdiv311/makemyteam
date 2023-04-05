@@ -31,7 +31,7 @@ const TeamList = () => {
     <div className={styles.teams}>
       <div className={styles.portal}>
         <h3>RR</h3>
-        <h3>SRH</h3>
+        <h3>PBKS</h3>
         <button className="btn btn-success" onClick={() => generateTeam()}>Make My Team</button>
         <button className="btn btn-primary" onClick={() => setTimeout(setShowOptions(true),2000)}>Select or Reject Player</button>
       </div>

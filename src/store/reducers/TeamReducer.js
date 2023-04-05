@@ -4,231 +4,231 @@ const teamSlice = createSlice({
     name: "team",
     initialState: {
         teams: [
-                {
-                 "Name": "D Conway",
-                 "Team": 1,
-                 "Credits": 8.5,
-                 "Skill": "WK",
-                 "Status": "Announced"
-                },
-                {
-                 "Name": "Ms Dhoni",
-                 "Team": 1,
-                 "Credits": 7.5,
-                 "Skill": "WK",
-                 "Status": "Announced"
-                },
-                {
-                 "Name": "R Gaikwad",
-                 "Team": 1,
-                 "Credits": 8.5,
-                 "Skill": "BAT",
-                 "Status": "Announced"
-                },
-                {
-                 "Name": "A Rayudu",
-                 "Team": 1,
-                 "Credits": 7.5,
-                 "Skill": "BAT",
-                 "Status": "Announced"
-                },
-                {
-                 "Name": "S Dube",
-                 "Team": 1,
-                 "Credits": 7,
-                 "Skill": "BAT",
-                 "Status": "Announced"
-                },
-                {
-                 "Name": "R Jadeja",
-                 "Team": 1,
-                 "Credits": 9,
-                 "Skill": "ALL",
-                 "Status": "Announced"
-                },
-                {
-                 "Name": "B Stokes",
-                 "Team": 1,
-                 "Credits": 9,
-                 "Skill": "ALL",
-                 "Status": "Announced"
-                },
-                {
-                 "Name": "M Ali",
-                 "Team": 1,
-                 "Credits": 8.5,
-                 "Skill": "ALL",
-                 "Status": "Announced"
-                },
-                {
-                 "Name": "M Santner",
-                 "Team": 1,
-                 "Credits": 6.5,
-                 "Skill": "ALL",
-                 "Status": "Announced"
-                },
-                {
-                 "Name": "D Chahar",
-                 "Team": 1,
-                 "Credits": 8.5,
-                 "Skill": "BOW",
-                 "Status": "Announced"
-                },
-                {
-                 "Name": "R Hangregekar",
-                 "Team": 1,
-                 "Credits": 5.5,
-                 "Skill": "BOW",
-                 "Status": "Announced"
-                },
-                {
-                 "Name": "T Deshpande",
-                 "Team": 1,
-                 "Credits": 6,
-                 "Skill": "BOW",
-                 "Status": "Sub"
-                },
-                {
-                 "Name": "S Senapati",
-                 "Team": 1,
-                 "Credits": 5.5,
-                 "Skill": "BAT",
-                 "Status": "Sub"
-                },
-                {
-                 "Name": "S Rasheed",
-                 "Team": 1,
-                 "Credits": 5,
-                 "Skill": "BAT",
-                 "Status": "Sub"
-                },
-                {
-                 "Name": "A Rahane",
-                 "Team": 1,
-                 "Credits": 7,
-                 "Skill": "BAT",
-                 "Status": "Sub"
-                },
-                {
-                 "Name": "Nishant sindhu",
-                 "Team": 1,
-                 "Credits": 5.5,
-                 "Skill": "BOW",
-                 "Status": "Sub"
-                },
-                {
-                 "Name": "N Pooran",
-                 "Team": 2,
-                 "Credits": 8.5,
-                 "Skill": "WK",
-                 "Status": "Announced"
-                },
-                {
-                 "Name": "KL Rahul",
-                 "Team": 2,
-                 "Credits": 9,
-                 "Skill": "WK",
-                 "Status": "Announced"
-                },
-                {
-                 "Name": "D Hooda",
-                 "Team": 2,
-                 "Credits": 8,
-                 "Skill": "BAT",
-                 "Status": "Announced"
-                },
-                {
-                 "Name": "A Badoni",
-                 "Team": 2,
-                 "Credits": 7,
-                 "Skill": "BAT",
-                 "Status": "Announced"
-                },
-                {
-                 "Name": "M Stoinis",
-                 "Team": 2,
-                 "Credits": 8.5,
-                 "Skill": "ALL",
-                 "Status": "Announced"
-                },
-                {
-                 "Name": "K Pandya",
-                 "Team": 2,
-                 "Credits": 8,
-                 "Skill": "ALL",
-                 "Status": "Announced"
-                },
-                {
-                 "Name": "K Mayers",
-                 "Team": 2,
-                 "Credits": 7,
-                 "Skill": "ALL",
-                 "Status": "Announced"
-                },
-                {
-                 "Name": "M Wood",
-                 "Team": 2,
-                 "Credits": 8,
-                 "Skill": "BOW",
-                 "Status": "Announced"
-                },
-                {
-                 "Name": "R Bishnoi",
-                 "Team": 2,
-                 "Credits": 8,
-                 "Skill": "BOW",
-                 "Status": "Announced"
-                },
-                {
-                 "Name": "J Unadkat",
-                 "Team": 2,
-                 "Credits": 7.5,
-                 "Skill": "BOW",
-                 "Status": "Announced"
-                },
-                {
-                 "Name": "A Khan",
-                 "Team": 2,
-                 "Credits": 8.5,
-                 "Skill": "BOW",
-                 "Status": "Announced"
-                },
-                {
-                 "Name": "K Gowtham",
-                 "Team": 2,
-                 "Credits": 6.5,
-                 "Skill": "ALL",
-                 "Status": "Sub"
-                },
-                {
-                 "Name": "Yash Thakur",
-                 "Team": 2,
-                 "Credits": 6,
-                 "Skill": "BOW",
-                 "Status": "Sub"
-                },
-                {
-                 "Name": "Prenak Mankad",
-                 "Team": 2,
-                 "Credits": 6,
-                 "Skill": "ALL",
-                 "Status": "Sub"
-                },
-                {
-                 "Name": "Amit Mishra",
-                 "Team": 2,
-                 "Credits": 7,
-                 "Skill": "BOW",
-                 "Status": "Sub"
-                },
-                {
-                 "Name": "D Sams",
-                 "Team": 2,
-                 "Credits": 7,
-                 "Skill": "ALL",
-                 "Status": "Sub"
-                }
-        ],
+          {
+           "Name": "J Buttler",
+           "Team": 1,
+           "Credits": 9,
+           "Skill": "WK",
+           "Status": "Announced"
+          },
+          {
+           "Name": "S samson",
+           "Team": 1,
+           "Credits": 8.5,
+           "Skill": "WK",
+           "Status": "Announced"
+          },
+          {
+           "Name": "S Hetmyer",
+           "Team": 1,
+           "Credits": 8,
+           "Skill": "BAT",
+           "Status": "Announced"
+          },
+          {
+           "Name": "D Paddikal",
+           "Team": 1,
+           "Credits": 8,
+           "Skill": "BAT",
+           "Status": "Announced"
+          },
+          {
+           "Name": "Y Jaiswal",
+           "Team": 1,
+           "Credits": 7.5,
+           "Skill": "BAT",
+           "Status": "Announced"
+          },
+          {
+           "Name": "J Holder",
+           "Team": 1,
+           "Credits": 8.5,
+           "Skill": "ALL",
+           "Status": "Announced"
+          },
+          {
+           "Name": "R Ashwin",
+           "Team": 1,
+           "Credits": 8,
+           "Skill": "ALL",
+           "Status": "Announced"
+          },
+          {
+           "Name": "R Parag",
+           "Team": 1,
+           "Credits": 7.5,
+           "Skill": "ALL",
+           "Status": "Announced"
+          },
+          {
+           "Name": "K Asif",
+           "Team": 1,
+           "Credits": 6,
+           "Skill": "BOW",
+           "Status": "Announced"
+          },
+          {
+           "Name": "Y Chahal",
+           "Team": 1,
+           "Credits": 8.5,
+           "Skill": "BOW",
+           "Status": "Announced"
+          },
+          {
+           "Name": "T Boult",
+           "Team": 1,
+           "Credits": 9,
+           "Skill": "BOW",
+           "Status": "Announced"
+          },
+          {
+           "Name": "D Jurel",
+           "Team": 1,
+           "Credits": 6,
+           "Skill": "BAT",
+           "Status": "Sub"
+          },
+          {
+           "Name": "D Ferreira",
+           "Team": 1,
+           "Credits": 6.5,
+           "Skill": "ALL",
+           "Status": "Sub"
+          },
+          {
+           "Name": "S Sharma",
+           "Team": 1,
+           "Credits": 6,
+           "Skill": "BOW",
+           "Status": "Sub"
+          },
+          {
+           "Name": "M Ashwin",
+           "Team": 1,
+           "Credits": 6.5,
+           "Skill": "BOW",
+           "Status": "Sub"
+          },
+          {
+           "Name": "N Saini",
+           "Team": 1,
+           "Credits": 7,
+           "Skill": "BOW",
+           "Status": "Sub"
+          },
+          {
+           "Name": "B Rajapaksa",
+           "Team": 2,
+           "Credits": 7.5,
+           "Skill": "WK",
+           "Status": "Announced"
+          },
+          {
+           "Name": "J Sharma",
+           "Team": 2,
+           "Credits": 7,
+           "Skill": "WK",
+           "Status": "Announced"
+          },
+          {
+           "Name": "P Singh",
+           "Team": 2,
+           "Credits": 6,
+           "Skill": "WK",
+           "Status": "Announced"
+          },
+          {
+           "Name": "S Dhawan",
+           "Team": 2,
+           "Credits": 9,
+           "Skill": "BAT",
+           "Status": "Announced"
+          },
+          {
+           "Name": "S Khan",
+           "Team": 2,
+           "Credits": 6.5,
+           "Skill": "BAT",
+           "Status": "Announced"
+          },
+          {
+           "Name": "S Curran",
+           "Team": 2,
+           "Credits": 9,
+           "Skill": "ALL",
+           "Status": "Announced"
+          },
+          {
+           "Name": "S Raza",
+           "Team": 2,
+           "Credits": 7,
+           "Skill": "ALL",
+           "Status": "Announced"
+          },
+          {
+           "Name": "A Singh",
+           "Team": 2,
+           "Credits": 8.5,
+           "Skill": "BOW",
+           "Status": "Announced"
+          },
+          {
+           "Name": "R Chahar",
+           "Team": 2,
+           "Credits": 8,
+           "Skill": "BOW",
+           "Status": "Announced"
+          },
+          {
+           "Name": "N Ellis",
+           "Team": 2,
+           "Credits": 7,
+           "Skill": "BOW",
+           "Status": "Announced"
+          },
+          {
+           "Name": "H Brar",
+           "Team": 2,
+           "Credits": 6.5,
+           "Skill": "BOW",
+           "Status": "Announced"
+          },
+          {
+           "Name": "R Dhawan",
+           "Team": 2,
+           "Credits": 6.5,
+           "Skill": "ALL",
+           "Status": "Sub"
+          },
+          {
+           "Name": "A Taide",
+           "Team": 2,
+           "Credits": 5,
+           "Skill": "BAT",
+           "Status": "Sub"
+          },
+          {
+           "Name": "H Bhatia",
+           "Team": 2,
+           "Credits": 5.5,
+           "Skill": "BAT",
+           "Status": "Sub"
+          },
+          {
+           "Name": "M Rathee",
+           "Team": 2,
+           "Credits": 5,
+           "Skill": "BAT",
+           "Status": "Sub"
+          },
+          {
+           "Name": "M Short",
+           "Team": 2,
+           "Credits": 6.5,
+           "Skill": "ALL",
+           "Status": "Sub"
+          }
+         ],
         cap: {captain: '', vice: ''},
         count: {WK: 0, BAT: 0, ALL: 0, BOW: 0},
         total: 0
@@ -266,17 +266,16 @@ const teamSlice = createSlice({
 
           let announcedTeam = state.teams.filter(i => i.Status.includes("Announce"));
 
-         while(state.count.WK<2 || state.count.BAT<2 || state.count.ALL<2 || state.count.BOW<2)
+         while(state.count.WK<1 || state.count.BAT<1 || state.count.ALL<1 || state.count.BOW<1)
          {
             let ind = Math.floor(Math.random() * announcedTeam.length);
             if(Math.random() >= Math.random())
             {
               ind = announcedTeam.length - 1 - ind;
-              console.log(ind);
             }
             let index = state.teams.findIndex(i => i.Name === announcedTeam[ind].Name);
 
-            if(state.teams[index].Status.includes("Announce") && !state.teams[index].Status.includes("Selected") && !state.teams[index].Status.includes("Rejected") && state.count[state.teams[index].Skill] <2)
+            if(state.teams[index].Status.includes("Announce") && !state.teams[index].Status.includes("Selected") && !state.teams[index].Status.includes("Rejected") && state.count[state.teams[index].Skill] <1)
             {    
               if(state.teams[index].Status.includes("Announced"))
               {
