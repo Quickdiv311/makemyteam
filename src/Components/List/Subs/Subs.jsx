@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Subs.module.css';
 import SubsIcon from '../../SubsIcon/SubsIcon';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { teamSelector } from '../../../store/reducers/TeamReducer';
+import { canAnnounceSub, canAnnounceSubItem, canSelectSub, canSelectSubItem } from '../../../store/reducers/CanReducer';
 
 const Subs = () => {
 
     const [teamA, setTeamA] = useState([]);
     const [teamB, setTeamB] = useState([]);
   const teams = useSelector(teamSelector);
+  const dispatch = useDispatch();
 
     useEffect(() => {
             let res1 = teams.filter(i => i.Team === 1 && (i.Status.includes("Sub")));
@@ -22,8 +24,8 @@ const Subs = () => {
     <div className={styles.teamList}>
       <h2>Here are Subs of both teams</h2>
           <div className={styles.generate}>
-      <button className="btn btn-success">Select a Sub</button>
-      <button className="btn btn-primary">Add Sub For Selection</button>
+      <button className="btn btn-success" onClick={() => {dispatch(canSelectSubItem())}}>Select a Sub</button>
+      <button className="btn btn-primary" onClick={() => {dispatch(canAnnounceSubItem())}}>Add Sub For Selection</button>
       </div>
          <div className={styles.list}>
       <div className={styles.list1}>

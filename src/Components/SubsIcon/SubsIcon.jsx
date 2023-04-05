@@ -2,12 +2,15 @@ import React from 'react';
 import styles from './SubsIcon.module.css';
 import {FaUserAlt} from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
-import { add, cancel, select, teamSelector, teams } from '../../store/reducers/TeamReducer';
+import { add, select } from '../../store/reducers/TeamReducer';
+import { canAnnounceSub, canSelectSub } from '../../store/reducers/CanReducer';
 
 
 const SubsIcon = (props) => {
 
   const dispatch = useDispatch();
+  let canSelect = useSelector(canSelectSub);
+  let canAnnounce = useSelector(canAnnounceSub);
   function subNames(input)
   {
     if(input == 1)
@@ -22,16 +25,15 @@ const SubsIcon = (props) => {
 
   function preSelect(input)
   {
-    // if(input.Status == "AnnounceSub")
-    // {
-    // dispatch(select(input));
-    // }
+    if(canSelect)
+    {
+      dispatch(select(input));
+    }
 
-    // if(input.Status == "Sub")
-    // {
-    // dispatch(add(input));
-    // }
-    dispatch(add(input));
+    if(canAnnounce)
+    {
+      dispatch(add(input));
+    }
   }
 
   function isSelected(input)
