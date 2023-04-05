@@ -35,6 +35,17 @@
     align-items: center;
 }
 
+.picRejected
+{
+    display: flex;
+    padding: 0 15px;
+    border-right: 1px solid black;
+    background-color: rgb(190, 10, 10) ;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+    align-items: center;
+}
+
 .title1
 {
    width: 75%;

@@ -169,28 +169,28 @@ const teamSlice = createSlice({
                  "Name": "M Wood",
                  "Team": 2,
                  "Credits": 8,
-                 "Skill": "BOWL",
+                 "Skill": "BOW",
                  "Status": "Announced"
                 },
                 {
                  "Name": "R Bishnoi",
                  "Team": 2,
                  "Credits": 8,
-                 "Skill": "BOWL",
+                 "Skill": "BOW",
                  "Status": "Announced"
                 },
                 {
                  "Name": "J Unadkat",
                  "Team": 2,
                  "Credits": 7.5,
-                 "Skill": "BOWL",
+                 "Skill": "BOW",
                  "Status": "Announced"
                 },
                 {
                  "Name": "A Khan",
                  "Team": 2,
                  "Credits": 8.5,
-                 "Skill": "BOWL",
+                 "Skill": "BOW",
                  "Status": "Announced"
                 },
                 {
@@ -251,12 +251,12 @@ const teamSlice = createSlice({
        },
 
        reject: (state, action) => {
-        let index = state.teams.findIndex(i => i.id === action.payload.id);
+        let index = state.teams.findIndex(i => i.Name === action.payload.Name);
         state.teams[index].Status = "RejectedAnnounced";
        },
 
        add: (state, action) => {
-        let index = state.teams.findIndex(i => i.id === action.payload.id);
+        let index = state.teams.findIndex(i => i.Name === action.payload.Name);
         state.teams[index].Status = "AnnounceSub";
        },
 
@@ -264,9 +264,18 @@ const teamSlice = createSlice({
 
           state.teams.filter(i => i.Status.includes("Selected") && !i.Status.includes("Pre")).forEach(i => i.Status.replace("Selected",""));
 
+          let announcedTeam = state.teams.filter(i => i.Status.includes("Announce"));
+
          while(state.count.WK<2 || state.count.BAT<2 || state.count.ALL<2 || state.count.BOW<2)
          {
-            let index = Math.floor(Math.random() * state.teams.length);
+            let ind = Math.floor(Math.random() * announcedTeam.length);
+            if(Math.random() >= Math.random())
+            {
+              ind = announcedTeam.length - 1 - ind;
+              console.log(ind);
+            }
+            let index = state.teams.findIndex(i => i.Name === announcedTeam[ind].Name);
+
             if(state.teams[index].Status.includes("Announce") && !state.teams[index].Status.includes("Selected") && !state.teams[index].Status.includes("Rejected") && state.count[state.teams[index].Skill] <2)
             {    
               if(state.teams[index].Status.includes("Announced"))
@@ -284,9 +293,13 @@ const teamSlice = createSlice({
             
           while((state.count.WK + state.count.BAT + state.count.ALL + state.count.BOW) < 11)
           {
-              let index = Math.floor(Math.random() * state.teams.length);
+            let ind = Math.floor(Math.random() * announcedTeam.length);
+            if(Math.random() >= Math.random())
+            {
+              ind = announcedTeam.length - 1 - ind;
+            }
+            let index = state.teams.findIndex(i => i.Name === announcedTeam[ind].Name);
 
-              
               if(state.teams[index].Status.includes("Announce") && !state.teams[index].Status.includes("Selected") && !state.teams[index].Status.includes("Rejected") && ((state.total + state.teams[index].Credits) <= 100))
               {
               if(state.teams[index].Status.includes("Announced"))
@@ -305,12 +318,10 @@ const teamSlice = createSlice({
           let selected = state.teams.filter(i => i.Status.includes("Selected"));
           
           let ind1 = Math.floor(Math.random() * selected.length);
-          state.cap.captain = selected[ind1].Name;    
+          state.cap.captain = selected[ind1].Name;   
+          selected.splice(ind1,1); 
           let ind2 = Math.floor(Math.random() * selected.length);
-          if(ind2 != ind1)
-          {
-            state.cap.vice = selected[ind2].Name;
-          }
+          state.cap.vice = selected[ind2].Name;
         }
     } 
 })

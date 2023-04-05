@@ -24,6 +24,17 @@
     align-items: center;
 }
 
+.picSub
+{
+    display: flex;
+    padding: 0 15px;
+    border-right: 1px solid black;
+    background-color: rgb(141, 142, 145);
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+    align-items: center;
+}
+
 .picSelected
 {
     display: flex;

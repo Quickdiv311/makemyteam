@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from './PlayerIcon.module.css';
 import {FaUserAlt} from 'react-icons/fa';
 import { useDispatch, useSelector} from 'react-redux';
-import { cancel, select, teamSelector} from '../../store/reducers/TeamReducer';
+import { cancel, reject, select, teamSelector} from '../../store/reducers/TeamReducer';
 
 
 const PlayerIcon = (props) => {
@@ -27,11 +27,15 @@ const PlayerIcon = (props) => {
 
   function isSelected(input)
   {
-    if(input.Status.includes("SelectedAnnounced"))
+    if(input.Status.includes("Pre"))
     {
       return styles.picSelected;
     }
-    if(input.Status == "Announced")
+    if(input.Status.includes("RejectedAnnounced"))
+    {
+     return styles.picRejected;
+    }
+    if(input.Status.includes("Announced"))
    {
     return styles.pic;
    }

@@ -16,9 +16,27 @@ const SelectedIcon = (props) => {
     }
   }
 
+  function isSelected(input)
+  {
+    if(input.Status.includes("Pre"))
+    {
+      return styles.picSelected;
+    }
+
+   else if(input.Status.includes("Sub"))
+   {
+    return styles.picSub;
+   }
+
+   else
+   {
+     return styles.pic;
+   }
+  }
+
   return (
     <div className={styles.player}>
-      <div className={styles.pic}>
+      <div className={isSelected(props.player)}>
         <FaUserAlt/>
       </div>
       <div className={team(props.player.Team)}>

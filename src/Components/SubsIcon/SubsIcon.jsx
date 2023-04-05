@@ -31,7 +31,7 @@ const SubsIcon = (props) => {
     // {
     // dispatch(add(input));
     // }
-    dispatch(select(input));
+    dispatch(add(input));
   }
 
   function isSelected(input)
@@ -43,7 +43,7 @@ const SubsIcon = (props) => {
 
     if(input.Status == "AnnounceSub") 
     {
-      return styles.picAnnounced;
+      return styles.picAdded;
     }
 
     if(input.Status == "Sub")
