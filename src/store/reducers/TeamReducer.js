@@ -252,16 +252,28 @@ const teamSlice = createSlice({
 
        cancel: (state,action) => {
         let index = state.teams.findIndex(i => i.Name === action.payload.Name);
-        if(state.teams[index].Status.includes("Announced"))
+        if(state.teams[index].Status==="PreSelectedAnnounced")
         {
             state.teams[index].Status = "Announced";
+            state.total -= state.teams[index].Credits;
+            state.count[state.teams[index].Skill] -= 1;
         }
-        if(state.teams[index].Status.includes("Sub"))
+        if(state.teams[index].Status === "PreSelectedSub")
         {
             state.teams[index].Status = "Sub";
+            state.total -= state.teams[index].Credits;
+            state.count[state.teams[index].Skill] -= 1; 
         }
-        state.total -= state.teams[index].Credits;
-        state.count[state.teams[index].Skill] -= 1; 
+
+        if(state.teams[index].Status === "RejectedAnnounced")
+        {
+          state.teams[index].Status = "Announced";
+        }
+
+        if(state.teams[index].Status === "AnnounceSub")
+        {
+          state.teams[index].Status = "Sub";
+        }
        },
 
        reject: (state, action) => {
