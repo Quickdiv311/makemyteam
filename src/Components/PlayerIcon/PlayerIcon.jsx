@@ -3,7 +3,7 @@ import styles from './PlayerIcon.module.css';
 import {FaUserAlt} from 'react-icons/fa';
 import { useDispatch, useSelector} from 'react-redux';
 import { canRejectAnnounced, canSelectAnnounced } from '../../store/reducers/CanReducer';
-import { select,reject } from '../../store/reducers/TeamReducer';
+import { select,reject, cancel } from '../../store/reducers/TeamReducer';
 
 
 const PlayerIcon = (props) => {
@@ -26,14 +26,19 @@ const PlayerIcon = (props) => {
 
   function preSelect(input)
   {
-    if(canSelect==true)
+    if(canSelect)
     {
       dispatch(select(input));
     }
 
-    if(canReject==true)
+    if(canReject)
     {
       dispatch(reject(input));
+    }
+
+    if(input.Status == "PreSelectedAnnounced" || input.Status == "RejectedAnnounced")
+    {
+      dispatch(cancel(input));
     }
   }
 

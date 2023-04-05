@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './SubsIcon.module.css';
 import {FaUserAlt} from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
-import { add, select } from '../../store/reducers/TeamReducer';
+import { add, cancel, select } from '../../store/reducers/TeamReducer';
 import { canAnnounceSub, canSelectSub } from '../../store/reducers/CanReducer';
 
 
@@ -33,6 +33,11 @@ const SubsIcon = (props) => {
     if(canAnnounce)
     {
       dispatch(add(input));
+    }
+
+    if(input.Status == "PreSelectedSub" || input.Status == "AnnounceSub")
+    {
+      dispatch(cancel(input));
     }
   }
 

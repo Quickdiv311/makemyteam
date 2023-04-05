@@ -96,13 +96,6 @@ const teamSlice = createSlice({
            "Status": "Sub"
           },
           {
-           "Name": "S Sharma",
-           "Team": 1,
-           "Credits": 6,
-           "Skill": "BOW",
-           "Status": "Sub"
-          },
-          {
            "Name": "M Ashwin",
            "Team": 1,
            "Credits": 6.5,
@@ -110,9 +103,16 @@ const teamSlice = createSlice({
            "Status": "Sub"
           },
           {
-           "Name": "N Saini",
+           "Name": "A Vashisth",
            "Team": 1,
-           "Credits": 7,
+           "Credits": 6,
+           "Skill": "ALL",
+           "Status": "Sub"
+          },
+          {
+           "Name": "K Yadavv",
+           "Team": 1,
+           "Credits": 6,
            "Skill": "BOW",
            "Status": "Sub"
           },
@@ -250,6 +250,20 @@ const teamSlice = createSlice({
         state.count[state.teams[index].Skill] += 1; 
        },
 
+       cancel: (state,action) => {
+        let index = state.teams.findIndex(i => i.Name === action.payload.Name);
+        if(state.teams[index].Status.includes("Announced"))
+        {
+            state.teams[index].Status = "Announced";
+        }
+        if(state.teams[index].Status.includes("Sub"))
+        {
+            state.teams[index].Status = "Sub";
+        }
+        state.total -= state.teams[index].Credits;
+        state.count[state.teams[index].Skill] -= 1; 
+       },
+
        reject: (state, action) => {
         let index = state.teams.findIndex(i => i.Name === action.payload.Name);
         state.teams[index].Status = "RejectedAnnounced";
@@ -262,7 +276,7 @@ const teamSlice = createSlice({
 
         generate: (state,action) =>  {
 
-          state.teams.filter(i => i.Status.includes("Selected") && !i.Status.includes("Pre")).forEach(i => i.Status.replace("Selected",""));
+          let randomTeam = state.teams.filter(i => i.Status.includes("Selected") && !i.Status.includes("Pre"));
 
           let announcedTeam = state.teams.filter(i => i.Status.includes("Announce"));
 
@@ -318,7 +332,7 @@ const teamSlice = createSlice({
 })
 
 export const teamReducer = teamSlice.reducer;
-export const {generate,initialize,select,reject,add} = teamSlice.actions;
+export const {generate,initialize,select,reject,add,cancel} = teamSlice.actions;
 export const teamSelector = (state) => state.teamReducer.teams;
 export const capSelector = (state) => state.teamReducer.cap;
 export const totalSelector = (state) => state.teamReducer.total;
