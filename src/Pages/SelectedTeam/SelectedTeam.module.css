@@ -15,6 +15,7 @@
 {
    display: flex;
    margin: 20px auto;
+   height: 700px;
 }
 
 .cap
@@ -24,3 +25,13 @@
    align-items: center;
    margin-bottom: 20px;
 }
+
+.regen
+{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: absolute;
+   bottom: 200px;
+}
+

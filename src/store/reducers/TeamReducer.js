@@ -299,7 +299,7 @@ const teamSlice = createSlice({
                 }
                 if(state.teams[i].Status == "SelectedSub")
                 {
-                    state.teams[i].Status = "Sub";
+                    state.teams[i].Status = "AnnounceSub";
                     state.total -= state.teams[i].Credits;
                     state.count[state.teams[i].Skill] -= 1;
                 }
@@ -312,7 +312,7 @@ const teamSlice = createSlice({
             let ind = Math.floor(Math.random() * announcedTeam.length);
             let index = state.teams.findIndex(i => i.Name === announcedTeam[ind].Name);
 
-            console.log("selected");
+
 
             if(state.teams[index].Status.includes("Announce") && !state.teams[index].Status.includes("Selected") && !state.teams[index].Status.includes("Rejected") && state.count[state.teams[index].Skill] <1)
             {    
@@ -351,11 +351,11 @@ const teamSlice = createSlice({
 
           let selected = state.teams.filter(i => i.Status.includes("Selected"));
           
-          // let ind1 = Math.floor(Math.random() * selected.length);
-          // state.cap.captain = selected[ind1].Name;   
-          // selected.splice(ind1,1); 
-          // let ind2 = Math.floor(Math.random() * selected.length);
-          // state.cap.vice = selected[ind2].Name;
+          let ind1 = Math.floor(Math.random() * selected.length);
+          state.cap.captain = selected[ind1].Name;   
+          selected.splice(ind1,1); 
+          let ind2 = Math.floor(Math.random() * selected.length);
+          state.cap.vice = selected[ind2].Name;
         }
     } 
 })
