@@ -8,7 +8,7 @@ const SelectedTeam = () => {
 
   const teams = useSelector(teamSelector);
   let myTeam = teams.filter(i => i.Status.includes("Selected"));
-  // console.log(myTeam);
+  console.log(myTeam);
   const cap = useSelector(capSelector);
   const dispatch = useDispatch();
 

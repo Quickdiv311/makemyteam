@@ -314,7 +314,7 @@ const teamSlice = createSlice({
 
 
 
-            if(state.teams[index].Status.includes("Announce") && !state.teams[index].Status.includes("Selected") && !state.teams[index].Status.includes("Rejected") && state.count[state.teams[index].Skill] <1)
+            if(state.teams[index].Status.includes("Announce") && !state.teams[index].Status.includes("Selected") && !state.teams[index].Status.includes("Rejected") && !state.teams[index].Status.includes("Pre") && state.count[state.teams[index].Skill] <1)
             {    
               if(state.teams[index].Status.includes("Announced"))
               {
@@ -334,7 +334,7 @@ const teamSlice = createSlice({
             let ind = Math.floor(Math.random() * announcedTeam.length);
             let index = state.teams.findIndex(i => i.Name === announcedTeam[ind].Name);
 
-              if(state.teams[index].Status.includes("Announce") && !state.teams[index].Status.includes("Selected") && !state.teams[index].Status.includes("Rejected") && ((state.total + state.teams[index].Credits) <= 100))
+              if(state.teams[index].Status.includes("Announce") && !state.teams[index].Status.includes("Selected") && !state.teams[index].Status.includes("Rejected") && !state.teams[index].Status.includes("Pre") && ((state.total + state.teams[index].Credits) <= 100))
               {
               if(state.teams[index].Status.includes("Announced"))
               {
