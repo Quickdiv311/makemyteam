@@ -8,7 +8,7 @@ const SelectedTeam = () => {
 
   const teams = useSelector(teamSelector);
   let myTeam = teams.filter(i => i.Status.includes("Selected"));
-  console.log(myTeam);
+  // console.log(myTeam);
   const cap = useSelector(capSelector);
   const dispatch = useDispatch();
 
@@ -57,6 +57,9 @@ const SelectedTeam = () => {
       </div>
       <div className={styles.cap}>
       <h6>Vice-Captain:</h6>&nbsp;&nbsp;&nbsp;<h4> {cap.vice}</h4>
+      </div>
+      <div>
+        <button className="btn btn-success" onClick={() => dispatch(generate())}>Remake my Team</button>
       </div>
     </div>
   );
