@@ -37,4 +37,10 @@
 .arrow
 {
     margin-right: 20px;
+    cursor: pointer;
+}
+
+.message{
+    text-align: center;
+    margin-top: 20px;
 }

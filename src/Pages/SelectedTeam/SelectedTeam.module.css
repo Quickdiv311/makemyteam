@@ -15,7 +15,6 @@
 {
    display: flex;
    margin: 20px auto;
-   min-height: 700px;
 }
 
 .cap
@@ -23,7 +22,6 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-bottom: 20px;
 }
 
 .regen
@@ -33,5 +31,19 @@
    align-items: center;
    position: absolute;
    bottom: 200px;
+}
+
+.teamCount
+{
+   display: flex;
+   border: 1px solid gray;
+   border-radius: 20px;
+   margin: 20px auto;
+   margin-bottom: 0px !important;
+   height: 80px;
+   width: 30%;
+   padding: 10px 30px;
+   justify-content: space-between;
+   align-items: center;
 }
 

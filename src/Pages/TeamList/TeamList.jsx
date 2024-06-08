@@ -30,28 +30,28 @@ const TeamList = () => {
   return (
     <div className={styles.teams}>
       <div className={styles.portal}>
-        <h3>RR</h3>
-        <h3>PBKS</h3>
+        <h3>MI</h3>
+        <h3>vs</h3>
+        <h3>CSK</h3>
         <button className="btn btn-success" onClick={() => generateTeam()}>Make My Team</button>
-        <button className="btn btn-primary" onClick={() => setTimeout(setShowOptions(true),2000)}>Select or Reject Player</button>
       </div>
-      {
-        showOptions &&
-        <div>
+
+        <div className={styles.main}>
+          <h4 className={styles.message}>Please click below select or reject a player</h4>
     <div className={styles.titles}>
-    <h2 className={styles.title}>Announced</h2>
+    <h2 className={styles.title}>Playing 11</h2>
       <BsChevronDown size={20} className={styles.arrow} onClick={() => {setShowTeam(!showTeam)}}/>
     </div>
       <hr />
       {showTeam && <Announced/>}
       <div className={styles.titles}>
-      <h2 className={styles.title}>Subtitutes</h2>
+      <h2 className={styles.title}>Impact Player Options</h2>
       <BsChevronDown size={20} className={styles.arrow} onClick={() => {setShowSubs(!showSubs)}}/>
       </div>
       <hr />
       {showSubs && <Subs/>}
         </div>
-      }
+      
 
       </div>
   );
