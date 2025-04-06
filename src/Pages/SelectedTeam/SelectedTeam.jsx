@@ -14,6 +14,15 @@ const SelectedTeam = () => {
   const teamsCount = useSelector(teamCount);
   const dispatch = useDispatch();
 
+    function generateTeam()
+    {
+    const selected = teams.filter(i => i.Status.includes("Selected"));
+        if(selected.length <7)
+        {
+          dispatch(generate());
+        }
+    }
+
   return (
     <div className={styles.main}>
         <h2>Selected Team</h2>

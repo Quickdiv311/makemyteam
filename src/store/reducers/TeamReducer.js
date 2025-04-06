@@ -291,8 +291,6 @@ const teamSlice = createSlice({
        },
 
         generate: (state,action) =>  {
-
-
           for(let i=0;i<state.teams.length;i++)
           {
                 if(state.teams[i].Status == "SelectedAnnounced")

@@ -20,7 +20,7 @@ const TeamList = () => {
   function generateTeam()
   {
   const selected = teams.filter(i => i.Status.includes("Selected"));
-      if(selected.length < 11)
+      if(selected.length <7)
       {
         dispatch(generate());
       }
